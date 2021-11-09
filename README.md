@@ -1,11 +1,8 @@
 # PACTree 
 
-This repository contains the artifact for the SOSP'21 paper:
+Packed Asynchronous Concurrency (PAC) is guidelines for designing high-performance persistent index structures. The key idea behind the guidelines is to 1) access NVM hardware in a packed manner to minimize its bandwidth utilization and 2) exploit asynchronous concurrency control to decouple the long NVM latency from the critical path of the index. We develop PACTree, a high-performance persistent range index following the PAC guidelines.
 
-*"PACTree: A High Performance Persistent Range Index Using PAC Guidelines"    
-Wook-Hee Kim, R. Madhava Krishnan, Xinwei Fu, Sanidhya Kashyap, and Changwoo Min  
-In Proceedings of the 28th ACM Symposium on Operating Systems Principles (ACM SOSP 2021)*
-
+This repository is provided under the terms of Apache 2.0 license.
 
 ## Directory structure
 ```{.sh}
@@ -101,3 +98,25 @@ If you want to use PACTree for your project, please follow below:
 ```
 Please refer ./CMakeLists.txt, example/example.cpp, example/CMakeLists.txt.  
 You can find the example at build/example/.  
+
+## Citation
+https://dl.acm.org/doi/10.1145/3477132.3483589
+```
+@inproceedings{10.1145/3477132.3483589,
+author = {Kim, Wook-Hee and Krishnan, R. Madhava and Fu, Xinwei and Kashyap, Sanidhya and Min, Changwoo},
+title = {PACTree: A High Performance Persistent Range Index Using PAC Guidelines},
+year = {2021},
+isbn = {9781450387095},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3477132.3483589},
+doi = {10.1145/3477132.3483589},
+booktitle = {Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles},
+pages = {424–439},
+numpages = {16},
+keywords = {Index structures, Non-volatile Memory},
+location = {Virtual Event, Germany},
+series = {SOSP '21}
+}
+```
+
