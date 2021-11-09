@@ -2,7 +2,7 @@
 
 Packed Asynchronous Concurrency (PAC) is guidelines for designing high-performance persistent index structures. The key idea behind the guidelines is to 1) access NVM hardware in a packed manner to minimize its bandwidth utilization and 2) exploit asynchronous concurrency control to decouple the long NVM latency from the critical path of the index. We develop PACTree, a high-performance persistent range index following the PAC guidelines.
 
-This repository is provided under the terms of Apache 2.0 license, except ```PDL-ART``` in the ```lib``` 
+This repository is provided under the terms of Apache 2.0 license, except ```PDL-ART``` in the ```lib``` directory.
 
 ## Directory structure
 ```{.sh}
